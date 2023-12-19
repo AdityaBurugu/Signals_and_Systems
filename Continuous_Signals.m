@@ -41,14 +41,14 @@ title("Unit Parabolic(4D4)");
 axis([min(t),max(t), min(parabolic)-0.5,max(parabolic)+0.5]);
 
 
-%Unit Square Signal
-square=1.*(abs(t)<=0.5)+0.*(abs(t)>0.5);
+%Unit Rectangular Signal
+rectangle=1.*(abs(t)<=0.5)+0.*(abs(t)>0.5);
 subplot(4,3,5);
-plot(t,square)
+plot(t,rectangle)
 xlabel("Iime");
 ylabel("Amplitude");
-title("Unit Square(4D4)");
-axis([min(t),max(t), min(square)-0.5,max(square)+0.5]);
+title("Unit Rectangle(4D4)");
+axis([min(t),max(t), min(rectangle)-0.5,max(rectangle)+0.5]);
 
 %Unit Triangular Signal
 triangular=(1-(abs(t)/2)).*(abs(t)<=2)+0.*(abs(t)>2);

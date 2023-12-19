@@ -10,5 +10,5 @@ Signal_2 = Signal_1.^2;
 Energy = trapz(t,Signal_2);
 Power = Energy/(2*T);
 
-disp(['Energy:E',num2str(Energy),'Joule']);
-disp(['Power:P',num2str(Power),'Joule']);
+disp(['Energy:',num2str(Energy),'Joule']);
+disp(['Power:',num2str(Power),'Watts']);

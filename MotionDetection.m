@@ -1,6 +1,6 @@
 clc; clear all; close all
 % Create a VideoReader object for the MP4 file
-videoFile = VideoReader('V1.mp4');
+videoFile = VideoReader('sample-10s.mp4');
 
 % Read frames from the MP4 video
 video = cell(1, videoFile.NumFrames);
@@ -23,7 +23,7 @@ for a = 1:2:length(video) %% number of frames the video have
     a2=video{a+1}; %% save next frame to a var
     aaa=abs(a1-a2).^2; %% absolute difference
     aaa1=(aaa(:,:,1)+aaa(:,:,2)+aaa(:,:,3));
-    aaa2=ordfilt2(aaa1,30,true(15));
+    aaa2=ordfilt2(aaa1,30,true(8));
     aaa3=im2double(aaa2);
     zeta=5;
     aaa3=(aaa3.^zeta);
