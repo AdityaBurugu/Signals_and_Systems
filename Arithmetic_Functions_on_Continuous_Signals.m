@@ -10,7 +10,7 @@ Signal_1 = (t+2).*(t>=-2 & t<=-1) + (1).*(t>-1 & t<=0)+ (2).*(t>0 & t<=1)+ (2-t)
 subplot(3,3,1);
 plot(t,Signal_1);
 xlabel("Time");
-ylabel("Amplitude");
+ylabel("Amplitude(4D4)");
 title("Signal 1");
 axis([min(t),max(t),min(Signal_1)-0.5,max(Signal_1)+0.5]);
 
@@ -21,7 +21,7 @@ subplot(3,3,2);
 plot(t,Signal_2);
 xlabel("Time");
 ylabel("Amplitude");
-title("Signal 2");
+title("Signal 2(4D4)");
 axis([min(t),max(t),min(Signal_2)-0.5,max(Signal_2)+0.5]);
 
 %Signal Addition

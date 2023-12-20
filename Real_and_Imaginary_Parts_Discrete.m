@@ -10,7 +10,7 @@ subplot(2,2,1);
 stem(t,x1);
 xlabel("Time");
 ylabel("Amplitude");
-title("Signal 1");
+title("Signal 1(4D4)");
 grid;
 
 %x2 = exp((-1i)*2*pi.*t);   Exponential Signal
@@ -20,7 +20,7 @@ subplot(2,2,2);
 stem(t,x2);
 xlabel("Time");
 ylabel("Amplitude");
-title("Signal 2");
+title("Signal 2(4D4)");
 grid;
 
 if(x1==x2)
@@ -40,7 +40,7 @@ subplot(2,2,3);
 stem(t,xe);
 xlabel("Time");
 ylabel("Amplitude");
-title("Even Signal");
+title("Even Signal(4D4)");
 grid;
 
 xo = (x1-x2)/2;
@@ -49,5 +49,5 @@ subplot(2,2,4);
 stem(t,xo);
 xlabel("Time");
 ylabel("Amplitude");
-title("Odd Signal");
+title("Odd Signal(4D4)");
 grid;

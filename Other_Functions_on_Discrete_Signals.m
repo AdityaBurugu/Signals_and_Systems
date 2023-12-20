@@ -7,7 +7,7 @@ subplot(4,2,1);
 stem(t,Signal_1);
 xlabel("Time");
 ylabel("Amplitude");
-title("Signal 1");
+title("Signal 1(4D4)");
 axis([min(t),max(t),min(Signal_1)-0.5,max(Signal_1)+0.5]);
 
 %Signal Left Shifting

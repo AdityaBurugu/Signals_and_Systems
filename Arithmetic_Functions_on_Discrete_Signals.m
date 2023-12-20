@@ -11,7 +11,7 @@ subplot(3,3,1);
 stem(t,Signal_1);
 xlabel("Time");
 ylabel("Amplitude");
-title("Signal 1");
+title("Signal 1(4D4)");
 axis([min(t),max(t),min(Signal_1)-0.5,max(Signal_1)+0.5]);
 
 %Signal 1
@@ -21,7 +21,7 @@ subplot(3,3,2);
 stem(t,Signal_2);
 xlabel("Time");
 ylabel("Amplitude");
-title("Signal 2");
+title("Signal 2(4D4)");
 axis([min(t),max(t),min(Signal_2)-0.5,max(Signal_2)+0.5]);
 
 %Signal Addition

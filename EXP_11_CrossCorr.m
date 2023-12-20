@@ -14,19 +14,19 @@ subplot(4,2,1);
 plot(s);
 xlabel("Time");
 ylabel("Amplitude");
-title("Input Signal");
+title("Input Signal(4D4)");
 
 subplot(4,2,2);
 plot(f);
 xlabel("Time");
 ylabel("Amplitude");
-title("Combined Signal");
+title("Combined Signal(4D4)");
 
 subplot(4,2,3);
 plot(c);
 xlabel("Time");
 ylabel("Amplitude");
-title("Constant Signal");
+title("Constant Signal(4D4)");
 
 Rsc = xcorr(s,c);
 Rnc = xcorr(n,c);
@@ -38,22 +38,22 @@ subplot(4,2,4);
 plot(Rsc);
 xlabel("Time");
 ylabel("Amplitude");
-title("Cross Correlation Rsc");
+title("Cross Correlation Rsc(4D4)");
 
 subplot(4,2,5);
 plot(Rnc);
 xlabel("Time");
 ylabel("Amplitude");
-title("Cross Correlation Rnc");
+title("Cross Correlation Rnc(4D4)");
 
 subplot(4,2,6);
 plot(Rfc);
 xlabel("Time");
 ylabel("Amplitude");
-title("Cross Correlation Rfc");
+title("Cross Correlation Rfc(4D4)");
 
 subplot(4,2,7);
 plot(R);
 xlabel("Time");
 ylabel("Amplitude");
-title("Cross Correlation R");
+title("Cross Correlation R(4D4)");
