@@ -10,7 +10,7 @@ subplot(3,2,1);
 plot(t,x1);
 xlabel("Time");
 ylabel("Amplitude");
-title("Signal 1(4D4)");
+title("Signal 1(4D3)");
 grid;
 
 x2 = exp((-1i)*2*pi.*t);   %Exponential Signal
@@ -20,7 +20,7 @@ subplot(3,2,2);
 plot(t,x2);
 xlabel("Time");
 ylabel("Amplitude");
-title("Signal 2(4D4)");
+title("Signal 2(4D3)");
 grid;
 
 if(x1==x2)
@@ -40,7 +40,7 @@ subplot(3,2,3);
 plot(t,xe);
 xlabel("Time");
 ylabel("Amplitude");
-title("Even Signal(4D4)");
+title("Even Signal(4D3)");
 grid;
 
 xo = (x1-x2)/2;
@@ -49,7 +49,7 @@ subplot(3,2,4);
 plot(t,xo);
 xlabel("Time");
 ylabel("Amplitude");
-title("Odd Signal(4D4)");
+title("Odd Signal(4D3)");
 grid;
 
 Real = real(x1);
@@ -58,7 +58,7 @@ subplot(3,2,5);
 plot(t,Real);
 xlabel("Time");
 ylabel("Amplitude");
-title("Real Part of Signal(4D4)");
+title("Real Part of Signal(4D3)");
 grid;
 
 Imagimary = imag(x2);
@@ -67,5 +67,5 @@ subplot(3,2,6);
 plot(t,Imagimary);
 xlabel("Time");
 ylabel("Amplitude");
-title("Imagimary Part of Signal(4D4)");
+title("Imagimary Part of Signal(4D3)");
 grid;

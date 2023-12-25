@@ -13,14 +13,14 @@ subplot(3,1,1);
 stem(n1,x);
 xlabel("time t");
 ylabel("amplitude x");
-title("input signal(4D4)");
+title("input signal(4D3)");
 subplot(3,1,2);
 stem(n2,h);
 xlabel("time t");
 ylabel("amplitude x");
-title("system response(4D4)");
+title("system response(4D3)");
 subplot(3,1,3);
 stem(n3,y)
 xlabel("time t");
 ylabel("amplitude x");
-title("convloution(4D4)");
+title("convloution(4D3)");

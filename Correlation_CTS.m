@@ -16,19 +16,19 @@ subplot(2,3,1);
 plot(t1,x);
 xlabel("Time");
 ylabel("Amplitude");
-title("Input Signal(4D4)");
+title("Input Signal(4D3)");
 
 subplot(2,3,2);
 plot(t2,x);
 xlabel("Time");
 ylabel("Amplitude");
-title("Received Signal(4D4)");
+title("Received Signal(4D3)");
 
 subplot(2,3,3);
 plot(t,RXX);
 xlabel("Time");
 ylabel("Amplitude");
-title("Auto Correlation(4D4)");
+title("Auto Correlation(4D3)");
 
 %Cross Correlation
 t1 = -3:0.01:3;
@@ -48,16 +48,16 @@ subplot(2,3,4);
 plot(t1,x);
 xlabel("Time");
 ylabel("Amplitude");
-title("Input Signal(4D4)");
+title("Input Signal(4D3)");
 
 subplot(2,3,5);
 plot(t3,y);
 xlabel("Time");
 ylabel("Amplitude");
-title("Received Signal(4D4)");
+title("Received Signal(4D3)");
 
 subplot(2,3,6);
 plot(t,RXY);
 xlabel("Time");
 ylabel("Amplitude");
-title("Cross Correlation(4D4)");
+title("Cross Correlation(4D3)");
