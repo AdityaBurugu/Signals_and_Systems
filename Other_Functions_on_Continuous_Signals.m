@@ -1,4 +1,4 @@
-%Time Range
+% %Time Rangefs
 t=-5:0.01:+5;
 
 %Signal 1
@@ -7,7 +7,7 @@ subplot(4,2,1);
 plot(t,Signal_1);
 xlabel("Time");
 ylabel("Amplitude");
-title("Signal 1(4D3)");
+title("Signal 1(20)");
 axis([min(t),max(t),min(Signal_1)-0.5,max(Signal_1)+0.5]);
 
 %Signal Left Shifting
@@ -16,7 +16,7 @@ subplot(4,2,2);
 plot(t,Signal_Left_Shifting);
 xlabel("Time");
 ylabel("Amplitude");
-title("Signal Left Shifting(4D3)");
+title("Signal Left Shifting(20)");
 axis([min(t),max(t),min(Signal_Left_Shifting)-0.5,max(Signal_Left_Shifting)+0.5]);
 
 %Signal Right Shifting
@@ -25,7 +25,7 @@ subplot(4,2,3);
 plot(t,Signal_Right_Shifting);
 xlabel("Time");
 ylabel("Amplitude");
-title("Signal Right Shifting(4D3)");
+title("Signal Right Shifting(20)");
 axis([min(t),max(t),min(Signal_Right_Shifting)-0.5,max(Signal_Right_Shifting)+0.5]);
 
 %Signal Amplitude Expansion
@@ -34,7 +34,7 @@ subplot(4,2,4);
 plot(t,Signal_Amplitude_Expansion);
 xlabel("Time");
 ylabel("Amplitude");
-title("Signal Amplitude Expansion Scaling(4D3)");
+title("Signal Amplitude Expansion Scaling(20)");
 axis([min(t),max(t),min(Signal_Amplitude_Expansion)-0.5,max(Signal_Amplitude_Expansion)+0.5]);
 
 %Signal Amplitude Compression
@@ -43,7 +43,7 @@ subplot(4,2,5);
 plot(t,Signal_Amplitude_Compression);
 xlabel("Time");
 ylabel("Amplitude");
-title("Signal Amplitude Compression Scaling(4D3)");
+title("Signal Amplitude Compression Scaling(20)");
 axis([min(t),max(t),min(Signal_Amplitude_Compression)-0.5,max(Signal_Amplitude_Compression)+0.5]);
 
 %Signal Time Compression
@@ -52,7 +52,7 @@ subplot(4,2,6);
 plot(t,Signal_Time_Compression);
 xlabel("Time");
 ylabel("Amplitude");
-title("Signal Time Compression Scaling(4D3)");
+title("Signal Time Compression Scaling(20)");
 axis([min(t),max(t),min(Signal_Time_Compression)-0.5,max(Signal_Time_Compression)+0.5]);
 
 %Signal Time Expansion
@@ -61,7 +61,7 @@ subplot(4,2,7);
 plot(t,Signal_Time_Expansion);
 xlabel("Time");
 ylabel("Amplitude");
-title("Signal Time Expansion Scaling(4D3)");
+title("Signal Time Expansion Scaling(20)");
 axis([min(t),max(t),min(Signal_Time_Expansion)-0.5,max(Signal_Time_Expansion)+0.5]);
 
 %Signal Folding
@@ -70,5 +70,5 @@ subplot(4,2,8);
 plot(t,Signal_Reverse);
 xlabel("Time");
 ylabel("Amplitude");
-title("Signal Folding(4D3)");
+title("Signal Folding(20)");
 axis([min(t),max(t),min(Signal_Reverse)-0.5,max(Signal_Reverse)+0.5]);

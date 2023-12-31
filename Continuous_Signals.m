@@ -10,7 +10,7 @@ subplot(4,3,1);
 plot(t,impulse)
 xlabel("Time");
 ylabel("Amplitude");
-title("Unit Impulse(4D3)");
+title("Unit Impulse(421)");
 axis([min(t),max(t), min(impulse)-0.5,max(impulse)+0.5]);
 
 %Unit Step Signal
@@ -19,7 +19,7 @@ subplot(4,3,2);
 plot(t,step)
 xlabel("Time");
 ylabel("Amplitude");
-title("Unit Step(4D3)");
+title("Unit Step(421)");
 axis([min(t),max(t), min(step)-0.5,max(step)+0.5]);
 
 %Unit Ramp Signal
@@ -28,7 +28,7 @@ subplot(4,3,3);
 plot(t,ramp)
 xlabel("Time");
 ylabel("Amplitude");
-title("Unit Ramp(4D3)");
+title("Unit Ramp(421)");
 axis([min(t),max(t), min(ramp)-0.5,max(ramp)+0.5]);
 
 %Unit Parabolic Signal
@@ -37,7 +37,7 @@ subplot(4,3,4);
 plot(t,parabolic)
 xlabel("Time");
 ylabel("amplitude");
-title("Unit Parabolic(4D3)");
+title("Unit Parabolic(421)");
 axis([min(t),max(t), min(parabolic)-0.5,max(parabolic)+0.5]);
 
 
@@ -47,7 +47,7 @@ subplot(4,3,5);
 plot(t,rectangle)
 xlabel("Time");
 ylabel("Amplitude");
-title("Unit Rectangle(4D3)");
+title("Unit Rectangle(421)");
 axis([min(t),max(t), min(rectangle)-0.5,max(rectangle)+0.5]);
 
 %Unit Triangular Signal
@@ -56,7 +56,7 @@ subplot(4,3,6);
 plot(t,triangular)
 xlabel("Time");
 ylabel("Amplitude");
-title("Unit Triangular(4D3)");
+title("Unit Triangular(421)");
 axis([min(t),max(t), min(triangular)-0.5,max(triangular)+0.5]);
 
 %Unit Signum Signal
@@ -65,7 +65,7 @@ subplot(4,3,7);
 plot(t,signum)
 xlabel("Time");
 ylabel("Amplitude");
-title("Unit Signum(4D3)");
+title("Unit Signum(421)");
 axis([min(t),max(t), min(signum)-0.5,max(signum)+0.5]);
 
 %Unit Sinc Signal
@@ -74,7 +74,7 @@ subplot(4,3,8);
 plot(t,u_sinc)
 xlabel("Time");
 ylabel("Amplitude");
-title("Unit Sinc(4D3)");
+title("Unit Sinc(421)");
 axis([min(t),max(t), min(u_sinc)-0.5,max(u_sinc)+0.5]);
 
 
@@ -84,7 +84,7 @@ subplot(4,3,9);
 plot(t,real_exponential)
 xlabel("Time");
 ylabel("Amplitude");
-title("Unit Real Exponential(4D3)");
+title("Unit Real Exponential(421)");
 axis([min(t),max(t), min(real_exponential)-0.5,max(real_exponential)+0.5]);
 
 %time interval for sin and cos Signals
@@ -96,7 +96,7 @@ subplot(4,3,10);
 plot(t1,u_sin)
 xlabel("Time");
 ylabel("Amplitude");
-title("Unit Sinusoidal(4D3)");
+title("Unit Sinusoidal(421)");
 axis([min(t1),max(t1), min(u_sin)-0.5,max(u_sin)+0.5]);
 
 %Unit Cosine Signal
@@ -105,7 +105,7 @@ subplot(4,3,11);
 plot(t1,u_cos)
 xlabel("Time");
 ylabel("Amplitude");
-title("Unit Cosinusoidal(4D3)");
+title("Unit Cosinusoidal(421)");
 axis([min(t1),max(t1), min(u_cos)-0.5,max(u_cos)+0.5]);
 
 %time interval for saw tooth Signal
@@ -119,6 +119,6 @@ subplot(4,3,12);
 plot(t,u_saw_tooth)
 xlabel("Time");
 ylabel("Amplitude");
-title("Unit Saw Tooth(4D3)");
+title("Unit Saw Tooth(421)");
 axis([min(t),max(t), min(u_saw_tooth)-0.5,max(u_saw_tooth)+0.5]);
 

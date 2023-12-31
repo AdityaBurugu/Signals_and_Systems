@@ -14,13 +14,13 @@ subplot(3,2,1);
 stem(n,x1);
 xlabel("Time");
 ylabel("Amplitude");
-title("Unit Impulse(4D3)");
+title("Unit Impulse(20)");
 
 subplot(3,2,2);
 stem(n,y1);
 xlabel("Time");
 ylabel("Amplitude");
-title("Response of Unit Impulse(4D3)");
+title("Response of Unit Impulse(20)");
 
 x2 = 1.*(n>=0)+0.*(n<0);
 y2 = filter(b,a,x2);
@@ -29,13 +29,13 @@ subplot(3,2,3);
 stem(n,x2);
 xlabel("Time");
 ylabel("Amplitude");
-title("Unit Step(4D3)");
+title("Unit Step(20)");
 
 subplot(3,2,4);
 stem(n,y2);
 xlabel("Time");
 ylabel("Amplitude");
-title("Response of Unit Step(4D3)");
+title("Response of Unit Step(20)");
 
 n = 0:1:8*pi;
 
@@ -46,13 +46,13 @@ subplot(3,2,5);
 stem(n,x3);
 xlabel("Time");
 ylabel("Amplitude");
-title("Sinusoidal(4D3)");
+title("Sinusoidal(20)");
 
 subplot(3,2,6);
 stem(n,y3);
 xlabel("Time");
 ylabel("Amplitude");
-title("Response of Sinusoidal(4D3)");
+title("Response of Sinusoidal(20)");
 
 
 figure;

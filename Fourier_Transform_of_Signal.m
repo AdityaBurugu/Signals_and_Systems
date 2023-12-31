@@ -11,16 +11,16 @@ subplot(3,1,1);
 plot(w1,x1);
 xlabel("Frequency");
 ylabel("Amplitude");
-title("Given Signal(4D3)");
+title("Given Signal(20)");
 
 subplot(3,1,2);
 plot(w1,mgx);
 xlabel("Frequency");
 ylabel("Magnitude");
-title("Magnitude Spectrum(4D3)");
+title("Magnitude Spectrum(20)");
 
 subplot(3,1,3);
 plot(w1,phx);
 xlabel("Frequency");
 ylabel("Phase");
-title("Phase Spectrum(4D3)");
+title("Phase Spectrum(20)");
