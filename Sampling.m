@@ -7,7 +7,7 @@ subplot(2,2,1);
 plot(t,x); 
 xlabel("time"); 
 ylabel("amp"); 
-title("Continuous Time Signal");
+title("Continuous Time Signal(4D4)");
 fs1=1.2*fm;
 fs2=2*fm;
 fs3=8*fm; 
@@ -20,7 +20,7 @@ subplot(2,2,2);
 plot(n1,x1);
 xlabel("time");
 ylabel("amp"); 
-title("overlap");
+title("overlap(4D4)");
 n2=-5:1:5;
 x2=sin(pi*fm*n2/fs2)+cos(2*pi*fm*n2/fs2);
 subplot(2,2,3); 
@@ -29,7 +29,7 @@ subplot(2,2,3);
 plot(n2,x2); 
 xlabel("time"); 
 ylabel("amp"); 
-title("nyquiest"); 
+title("nyquiest(4D4)"); 
 n3=-20:1:20; 
 x3=sin(pi*fm*n3/fs3)+cos(2*pi*fm*n3/fs3); 
 subplot(2,2,4); 
@@ -39,7 +39,7 @@ subplot(2,2,4);
 plot(n3,x3); 
 xlabel("time"); 
 ylabel("amp"); 
-title("sampling");
+title("sampling(4D4)");
 
 
 
