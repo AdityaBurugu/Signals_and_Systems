@@ -1,33 +1,55 @@
-% Define the analog signal
-t = 0:0.001:1; % Time vector from 0 to 1 second
-Analog_Signal = sin(2*pi*5*t); % Example analog signal (sine wave)
-% PCM parameters
-bit_depth = 8; % Number of bits for quantization
-quantization_levels = 2^bit_depth; % Total quantization levels
-% Quantization
-Quantized_Signal = round((Analog_Signal + 1) * (quantization_levels - 1) / 2);
-% Demodulation
-Demodulated_Signal = (2 * Quantized_Signal) / (quantization_levels - 1) - 1;
-% Encoding PCM
-Encoded_PCM = de2bi(Quantized_Signal, bit_depth, 'left-msb');
-% Plotting
-subplot(4,1,1);
-plot(t, Analog_Signal);
-title('Analog Signal');
-xlabel('Time');
+clear all
+close all
+
+% Generation of PCM
+% PCM signal generation
+f=2;
+a=3;
+fs=20*f;
+t= 0:1/fs:2;
+x=a*sin(2*pi*f*t);
+subplot(5,1,1)
+plot(t,x)
+title ('Analog signal  ');
+xlabel('Time Axis');
 ylabel('Amplitude');
-subplot(4,1,2);
-stairs(t, Quantized_Signal);
-title('Quantized Signal');
-xlabel('Time');
+subplot(5,1,2)
+stem(t,x);
+
+% level shifting
+x1=x+a;
+l=length(x1);
+% quantization
+q_op=round(x1);
+
+subplot(5,1,3)
+plot(t,q_op)
+title ('Quantized signal');
+xlabel('Time Axis');
 ylabel('Amplitude');
-subplot(4,1,3);
-plot(t, Demodulated_Signal);
-title('Demodulated Signal');
-xlabel('Time');
+
+% encoder
+enco= dec2bin(q_op);
+k=1;
+code=zeros(1,l);
+for i=1:l
+for j=1:3
+code(k)= enco(i,j)-48;
+k=k+1;
+end
+end
+subplot(5,1,4),stairs(code);
+axis([0 243 0 2]);
+title('Encoded Signal  ');
+xlabel('Time Axis');
 ylabel('Amplitude');
-subplot(4,1,4);
-plot(t, Encoded_PCM);
-title('Encoded PCM');
-xlabel('Time');
-ylabel('Bit');
+% receiver
+deco= bin2dec(enco);
+% shifting amplitude level
+xr=deco-a;
+%plotting
+subplot(5,1,5)
+plot(t,xr,'r')
+title('Decoded Signal  ')
+xlabel('Time Axis');
+ylabel('Amplitude');

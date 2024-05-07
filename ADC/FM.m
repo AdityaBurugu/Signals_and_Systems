@@ -51,7 +51,9 @@ d1 = fmdemod(s1,fc,fs,fc+2);
 z = filter(b,a,d1);
 subplot(3,2,5)
 plot(t,z);
-title("demodulation -narrow band fm");
+title("Demodulation -Narrow band fm");
+ylabel('amplitude');
+xlabel("time");
 
 %demodulation - wide band fm
 d = s2.* c;
@@ -60,4 +62,6 @@ d2 = fmdemod(s2,fc,fs,fc+2);
 z = filter(b,a,d2);
 subplot(3,2,6)
 plot(t,z);
-title("demodulation - wide band fm");
+title("Demodulation - Wide band fm");
+ylabel('amplitude');
+xlabel("time");

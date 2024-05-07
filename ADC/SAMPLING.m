@@ -36,7 +36,9 @@ title("Nyquiest(4D4)");
 n3=-20:1:20; 
 x3=sin(pi*fm*n3/fs3)+cos(2*pi*fm*n3/fs3); 
 subplot(3,2,4); 
-stem(n3,x3); 
+stem(n3,x3);
+hold on
+plot(n3,x3); 
 xlabel("time"); 
 ylabel("amp"); 
 title("Sampling(4D4)");
